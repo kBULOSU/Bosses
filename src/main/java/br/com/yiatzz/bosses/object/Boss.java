@@ -2,6 +2,7 @@ package br.com.yiatzz.bosses.object;
 
 import br.com.yiatzz.bosses.BossPlugin;
 import br.com.yiatzz.bosses.misc.utils.NBTUtil;
+import br.com.yiatzz.bosses.misc.utils.ColorUtil;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.Bukkit;
@@ -49,7 +50,7 @@ public class Boss {
 
             livingEntity.setMetadata(METADATA, new FixedMetadataValue(BossPlugin.getInstance(), this.identifier));
             livingEntity.setCustomNameVisible(true);
-            livingEntity.setCustomName(ChatColor.translateAlternateColorCodes('§', this.displayName));
+            livingEntity.setCustomName(ColorUtil.colorIt(this.displayName));
         }
 
         net.minecraft.server.v1_8_R3.Entity nmsEntity = ((CraftEntity) entity).getHandle();
