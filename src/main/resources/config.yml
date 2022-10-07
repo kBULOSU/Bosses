@@ -1,0 +1,38 @@
+Bosses:
+  zombie:
+    entity-name: "ZOMBIE"
+    life: 1000
+    icon:
+      material: "MONSTER_EGG"
+      head-url: ""
+      data: 50
+      display-name: "Boss Zumbi"
+      lore:
+        - "&fVida: &c1.000"
+    rewards:
+      1:
+        material: "DIAMOND_BLOCK"
+        data: 0
+        amount: 1
+        display-name: "Diamante"
+        lore:
+          - "&fdiamante"
+        command: "dardinhiero <player> 100" #deixar sem nada caso não queira. <player> a variavel do nome
+
+Blade:
+  display-name: "&cLâmina de Bosses"
+  material: "DIAMOND_SWORD"
+
+Amplifier:
+  material: "REDSTONE"
+  display-name: "&cAmplificador"
+  lore:
+    - "&7Amplificando: &f<amplifier>"
+
+action-bar: "&fVida: &c<health>/<maxHealth>"
+
+database:
+  host: "127.0.0.1"
+  user: "root"
+  pass: "fodase"
+  name: "rankup"

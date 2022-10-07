@@ -1,0 +1,12 @@
+name: Bosses
+author: yiatz
+version: 0.1
+main: br.com.yiatzz.bosses.BossPlugin
+
+commands:
+  blade:
+    aliases: [ "lamina" ]
+  boss:
+    aliases: [ "bosses" ]
+  amplifier:
+    aliases: [ "amplificador" ]
